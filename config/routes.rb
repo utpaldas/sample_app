@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  #get "users/new"
+  #Utpal resources gives us the Restful routes for crud actions on users
+  resources :users
 
   root to: 'static_pages#home'
 
